@@ -1,0 +1,12 @@
+{
+  "name": "diez-agentes",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deck": "python3 -m http.server 4173 --bind 127.0.0.1 --directory deck",
+    "sync": "node scripts/sync-deck.mjs",
+    "check": "node scripts/sync-deck.mjs --check",
+    "arrancar": "scripts/arrancar.sh",
+    "preflight": "scripts/preflight.sh"
+  }
+}
